@@ -63,11 +63,4 @@ class DatabaseHelper {
             where: 'id = ?',
             whereArgs: [task.id]); // Condição para atualização
   }
-
-  Future<int> deleteTask(int id) async {
-    // Método assíncrono para deletar uma tarefa do banco de dados
-    final db = await database; // Obtém o banco de dados
-    return await db.delete('tarefa',
-        where: 'id = ?', whereArgs: [id]); // Deleta a tarefa da tabela 'tasks'
-  }
 }

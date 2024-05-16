@@ -78,10 +78,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
                   // Botão de ação à direita do item
                   icon: Icon(Icons.delete), // Ícone do botão
                   onPressed: () {
-                    // Ação ao pressionar o botão
-                    dbHelper.deleteTask(snapshot.data![index]
-                        .id!); // Deleta a tarefa selecionada do banco de dados
-                    setState(() {}); // Atualiza a interface
+                    // Atualiza a interface
                   },
                 ),
               );
